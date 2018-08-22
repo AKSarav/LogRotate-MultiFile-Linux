@@ -1,21 +1,8 @@
 REPLACELOGFILE
 {
-        # Do this Daily
-        daily
-
-        # Compress the file
         compress
-
-        # Its OK if the file is not there
         missingok
-
-        # Empty the file after log rotation
         copytruncate
-
-        # Use the Date for the extension while logrotating
         dateext
-
-        # Keep only 10 days older files - Retention Period
-        maxage 10
+        notifempty
 }
-
